@@ -16,7 +16,6 @@ function my_wp_mail_filter( $compact ) {
 function um_landing_page() {
 
     $reset = str_replace( get_bloginfo( 'url' ), '', get_permalink( UM()->config()->permalinks['password-reset'] ));
-    UM()->classes['um_html_view_function']->debug_cpu_update_profile( $reset, __FUNCTION__, 'reset' );
     
     if( isset( $_REQUEST['myact'] )) {
 
