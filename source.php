@@ -29,8 +29,7 @@ function um_landing_page() {
                     </form>
                 </div>
                 <div>Need help?<p><a href="mailto:<?php echo get_bloginfo( 'admin_email' );?>">Contact  us</a> today.</p></div>
-            </div>
-            
+             
             <div>
                 <div>Thank you!</div>
                 <div>The <a href="<?php echo get_bloginfo( 'url' );?>"><?php echo get_bloginfo( 'name' );?></a> Team</div>
@@ -51,7 +50,6 @@ function um_landing_page() {
                     </form>
                 </div>
                 <div>Need help?<p><a href="mailto:<?php echo get_bloginfo( 'admin_email' );?>">Contact  us</a> today.</p></div>
-            </div>
             
             <div>
                 <div>Thank you!</div>
