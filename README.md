@@ -2,9 +2,13 @@
 
 This is a quick fix for the bug report https://github.com/ultimatemember/ultimatemember/issues/845
 
+and updated with this bug report https://github.com/ultimatemember/ultimatemember/issues/952
+
 # Installation
 
 Create a WP Page with the slug: um-landing-page
+
+Page name can be different from "UM Landing Page" if you have other requirements.
 
 On this page insert only the shortcode: [um-landing-page]
 
@@ -16,13 +20,13 @@ or use the Code Snippets plugin https://wordpress.org/plugins/code-snippets/
 
 # Solution
 
-This code snippet will replace the "Account Activation" and "Password Reset" links from the emails being sent to the users. A hook in WordPress wp_mail is used for the replacement.
+This code snippet will replace the "Account Activation" and "Password Reset" links from the emails being sent to the users. A hook in WordPress wp_mail is used for the replacement. The "Account Activation" link user ID is replaced by the user login name.
 
-The links will now point to the "um-landing-page" but still with the original hashes and user ids as GET parameters.
+The email links will now point to the "um-landing-page" but still with the original hashes and for the "Password Reset" the user ID as a GET parameter.
 
-The Landing Page is created by the shortcode as a simple page with instructions, link to your blog page, email and a button. The UM generated hash and user id from the email are added as hidden form fields.
+The Landing Page is created by the shortcode as a simple page with instructions, link to your blog page, email and a button. The UM generated hash and user ID from the "Password Reset" email are added as hidden form fields. The "Account Activation" hash is used for finding the user ID which is used to verify against the user login name. If failure there is no Activation button link presented but a hint that the link is invalid or outdated, which is the case if link being used second time.
 
-Clicking the button user will be sending the hash and user id values to UM for "Account Verification" (via a form POST) and "Password Reset" (via a form GET) to the respective UM pages where the hashes and user ids are verified by current UM setup.
+Clicking the button user will be sending the hash and user ID values to UM for "Account Verification" (via a form POST) and "Password Reset" (via a form GET) to the respective UM pages, where the hashes and user ID's are verified by current UM setup.
 
 You may localize the templates within the source code but keep the php code as is.
 
