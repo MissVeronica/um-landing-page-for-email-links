@@ -4,7 +4,7 @@ This is a quick fix for the bug report https://github.com/ultimatemember/ultimat
 
 and updated with this bug report https://github.com/ultimatemember/ultimatemember/issues/952
 
-# Installation
+## Installation
 
 Create a WP Page with the slug: um-landing-page
 
@@ -18,7 +18,7 @@ Add the source.php file from this posting https://github.com/MissVeronica/um-lan
 
 or use the "Code Snippets" plugin https://wordpress.org/plugins/code-snippets/
 
-# Solution
+## Solution
 
 This code snippet will replace the "Account Activation" and "Password Reset" links from the emails being sent to the users. A hook in WordPress wp_mail is used for the replacement. The "Account Activation" link User ID is replaced by the User Login name.
 
@@ -29,4 +29,9 @@ The Landing Page is created by the shortcode as a simple page with instructions,
 Clicking the button user will be sending the hash and User ID values to UM for "Account Verification" (via a form POST) and "Password Reset" (via a form GET) to the respective UM pages, where the hashes and User ID's are verified by current UM setup.
 
 You may localize the templates within the source code but keep the php code as is.
+
+## Note about caching
+You may also have a web hosting or WP Plugin caching issue.
+
+https://docs.ultimatemember.com/article/1595-caching-problems
 
