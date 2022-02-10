@@ -30,8 +30,10 @@ Clicking the button user will be sending the hash and User ID values to UM for "
 
 You may localize the templates within the source code but keep the php code as is.
 
-## Note about caching
+## Note about caching and firewalls
 You may also have a web hosting or WP Plugin caching issue.
 
 https://docs.ultimatemember.com/article/1595-caching-problems
+
+Another possible issue is the firewall mod_security settings, ask your Web Hosting Support.
 
