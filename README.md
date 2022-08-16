@@ -4,6 +4,8 @@ This is a quick fix for the bug report https://github.com/ultimatemember/ultimat
 
 and updated with this bug report https://github.com/ultimatemember/ultimatemember/issues/952
 
+Version 3: 2022-08-16 Supporting both UM upto 2.4.2 and UM 2.5.0 and afterwards
+
 ## Installation
 
 Create a WP Page with the slug: um-landing-page
