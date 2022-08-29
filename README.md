@@ -14,7 +14,7 @@ Page name can be different from "UM Landing Page" if you have other requirements
 
 On this page insert only the shortcode: [um-landing-page]
 
-Add the Landing Page slug to your list of "Exclude the following URLs" at UM -> Settings -> Access -> Restriction Content 
+Add the Landing Page slug to your UM Settings -> Access -> Restriction Content -> Exclude the following URLs  and click "Add new URL"
 
 Add the source.php file from this posting https://github.com/MissVeronica/um-landing-page-for-email-links/blob/main/source.php to your child-theme functions.php file
 
