@@ -16,13 +16,9 @@ On this page insert only the shortcode: [um-landing-page]
 
 Add the Landing Page slug to your UM Settings -> Access -> Restriction Content -> Exclude the following URLs  and click "Add new URL"
 
-Add the source.php file from this posting https://github.com/MissVeronica/um-landing-page-for-email-links/blob/main/source.php to your child-theme functions.php file
-
-or use the "Code Snippets" plugin https://wordpress.org/plugins/code-snippets/
-
 ## Solution
 
-This code snippet will replace the "Account Activation" and "Password Reset" links from the emails being sent to the users. A hook in WordPress wp_mail is used for the replacement. The "Account Activation" link User ID is replaced by the User Login name.
+This plugin will replace the "Account Activation" and "Password Reset" links from the emails being sent to the users. A hook in WordPress wp_mail is used for the replacement. The "Account Activation" link User ID is replaced by the User Login name.
 
 The email links will now point to the "um-landing-page" but still with the original hashes and for the "Password Reset" the User ID as a GET parameter.
 
@@ -30,12 +26,18 @@ The Landing Page is created by the shortcode as a simple page with instructions,
 
 Clicking the button user will be sending the hash and User ID values to UM for "Account Verification" (via a form POST) and "Password Reset" (via a form GET) to the respective UM pages, where the hashes and User ID's are verified by current UM setup.
 
-You may localize the templates within the source code but keep the php code as is.
-
 ## Note about caching and firewalls
 You may also have a Web Hosting or WP Plugin caching issue.
 
 https://docs.ultimatemember.com/article/1595-caching-problems
 
 Another possible issue is the Firewall mod_security settings, ask your Web Hosting Support or look at your cPanel.
+
+## Translations
+1. Use the "Say What?" plugin with text domain ultimate-member
+2. https://wordpress.org/plugins/say-what/
+
+## Installation
+1. Install by downloading the plugin ZIP file and install as a new Plugin, which you upload in WordPress -> Plugins -> Add New -> Upload Plugin.
+2. Activate the Plugin: Ultimate Member - Landing Page for Email Links
 
