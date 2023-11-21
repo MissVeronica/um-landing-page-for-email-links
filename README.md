@@ -1,23 +1,17 @@
 # Ultimate Member Landing Page for Email Links
-
 This is a quick fix for the bug report https://github.com/ultimatemember/ultimatemember/issues/845
 
 and updated with this bug report https://github.com/ultimatemember/ultimatemember/issues/952
 
 Version 3: 2022-08-16 Supporting both UM upto 2.4.2 and UM 2.5.0 and afterwards
 
-## Installation
-
-Create a WP Page with the slug: um-landing-page
-
-Page name can be different from "UM Landing Page" if you have other requirements.
-
-On this page insert only the shortcode: [um-landing-page]
-
-Add the Landing Page slug to your UM Settings -> Access -> Restriction Content -> Exclude the following URLs  and click "Add new URL"
+## UM Preparation
+1. Create a WP Page with the slug: um-landing-page
+2. Page name can be different from "UM Landing Page" if you have other requirements.
+3. On this page insert only the shortcode: [um-landing-page]
+4. Add the Landing Page slug to your UM Settings -> Access -> Restriction Content -> Exclude the following URLs  and click "Add new URL"
 
 ## Solution
-
 This plugin will replace the "Account Activation" and "Password Reset" links from the emails being sent to the users. A hook in WordPress wp_mail is used for the replacement. The "Account Activation" link User ID is replaced by the User Login name.
 
 The email links will now point to the "um-landing-page" but still with the original hashes and for the "Password Reset" the User ID as a GET parameter.
