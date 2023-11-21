@@ -1,9 +1,10 @@
 # Ultimate Member Landing Page for Email Links
-This is a quick fix for the bug report https://github.com/ultimatemember/ultimatemember/issues/845
+This plugin will try to solve this issue by creating a landing page for email links in UM notification emails. 
+Clicking on the “Activation” or “Reset password” links received via email should Activate a new UM Account or make Password reset possible to perform without the message link being invalid/old/already used.
 
-and updated with this bug report https://github.com/ultimatemember/ultimatemember/issues/952
-
-Version 3: 2022-08-16 Supporting both UM upto 2.4.2 and UM 2.5.0 and afterwards
+## Updates
+1. Version 3.0.0 2022-08-16 Supporting both UM upto 2.4.2 and UM 2.5.0 and afterwards
+2. Version 3.0.0 2023-11-21 Code snippet converted to Plugin.
 
 ## UM Preparation
 1. Create a WP Page with the slug: um-landing-page
@@ -34,4 +35,8 @@ Another possible issue is the Firewall mod_security settings, ask your Web Hosti
 ## Installation
 1. Install by downloading the plugin ZIP file and install as a new Plugin, which you upload in WordPress -> Plugins -> Add New -> Upload Plugin.
 2. Activate the Plugin: Ultimate Member - Landing Page for Email Links
+
+## UM Bug Reports
+1. https://github.com/ultimatemember/ultimatemember/issues/845
+2. https://github.com/ultimatemember/ultimatemember/issues/952
 
