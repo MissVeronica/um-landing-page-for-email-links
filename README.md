@@ -11,6 +11,7 @@ Clicking on the “Activation” or “Reset password” links received via emai
 2. Page name can be different from "UM Landing Page" if you have other requirements.
 3. On this page insert only the shortcode: [um-landing-page]
 4. Add the Landing Page slug to your UM Settings -> Access -> Restriction Content -> Exclude the following URLs  and click "Add new URL"
+5. Step 4 depends on your setting of “Global Site Access” in UM Settings -> Access -> Restriction Content. If your site is only available to Logged in Users you must open the Landing page for access otherwise it’s not necessary.
 
 ## Solution
 This plugin will replace the "Account Activation" and "Password Reset" links from the emails being sent to the users. A hook in WordPress wp_mail is used for the replacement. The "Account Activation" link User ID is replaced by the User Login name.
