@@ -5,6 +5,7 @@ Clicking on the “Activation” or “Reset password” links received via emai
 ## Updates
 1. Version 3.0.0 2022-08-16 Supporting both UM upto 2.4.2 and UM 2.5.0 and afterwards
 2. Version 3.0.0 2023-11-21 Code snippet converted to Plugin.
+3. Version 3.0.1 2024-05-26 Removed a double space from the text "Contact us today."
 
 ## UM Preparation
 1. Create a WP Page with the slug: um-landing-page
@@ -32,6 +33,18 @@ Another possible issue is the Firewall mod_security settings, ask your Web Hosti
 ## Translations
 1. Use the "Say What?" plugin with text domain ultimate-member
 2. https://wordpress.org/plugins/say-what/
+3. These are the "Say What?" plugin's “Original string” one per line:
+
+<code>Sorry, your activation link is invalid or outdated.
+Please click this button to activate your account.
+Activate now
+Please click this button to reset your password.
+Reset password now
+Need help?
+Contact us today.
+Thank you!
+The %s Team</code>
+
 
 ## Installation
 1. Install by downloading the plugin ZIP file and install as a new Plugin, which you upload in WordPress -> Plugins -> Add New -> Upload Plugin.
