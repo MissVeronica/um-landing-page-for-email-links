@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     Ultimate Member - Landing Page for Email Links
  * Description:     Extension to Ultimate Member Supporting both UM upto 2.4.2 and UM 2.5.0 including and after.
- * Version:         3.0.0
+ * Version:         3.0.1
  * Requires PHP:    7.4
  * Author:          Miss Veronica
  * License:         GPL v2 or later
@@ -122,7 +122,7 @@ Class UM_Landing_Page {
             <div><?php echo __( 'Need help?', 'ultimate-member' ); ?>
                 <p>
                     <a href="<?php echo esc_url( 'mailto:' . get_bloginfo( 'admin_email' ), array( 'mailto' )); ?>">
-                    <?php echo __( 'Contact  us today.', 'ultimate-member' ); ?></a>
+                    <?php echo __( 'Contact us today.', 'ultimate-member' ); ?></a>
                 </p>
             </div>
 
